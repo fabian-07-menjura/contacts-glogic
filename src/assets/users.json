@@ -1,0 +1,7 @@
+{
+  "rows": [
+    { "nombre": "Andres", "Entidad": "Entidad", "Email": "andresg@gmail.com" },
+    { "nombre": "Ricardo", "Entidad": "Entidad", "Email": "Ricardo@gmail.com" },
+    { "nombre": "Javier", "Entidad": "Entidad", "Email": "Javierg@gmail.com" }
+  ]
+}

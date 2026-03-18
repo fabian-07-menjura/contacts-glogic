@@ -1,1 +1,158 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-blue: #2563eb;
+  --primary-gradient: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+  --bg-color: #f8fafc;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --glass-effect: rgba(255, 255, 255, 0.8);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family:
+    'Inter',
+    -apple-system,
+    sans-serif;
+  color: var(--text-main);
+}
+.contact-page {
+  .title {
+    font-weight: 800;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+  }
+
+  .main-card {
+    background: white;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+
+  .card-gradient {
+    background: var(--primary-gradient);
+    padding: 1.5rem 2rem;
+    border-bottom: none;
+  }
+
+  .search-input {
+    background: white;
+    border-radius: 100px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .search-input:focus-within {
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .search {
+    border: none !important;
+    background: transparent !important;
+    font-size: 1.05rem;
+    padding: 12px;
+  }
+
+  .search::placeholder {
+    color: #a0aec0;
+  }
+  .form {
+    .form-input {
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      padding: 14px 18px 14px 45px;
+      background: white;
+      transition: all 0.2s ease;
+      font-size: 1rem;
+
+      &:focus {
+        border-color: var(--blue);
+        box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+      }
+    }
+
+    .input-icon {
+      color: #a0aec0;
+      transition: color 0.2s;
+    }
+
+    &:focus + .input-icon {
+      color: var(--primary-blue);
+    }
+
+    .btn-save {
+      background: var(--primary-gradient);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 30px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 5px 15px rgba(37, 99, 235, 0.2);
+      transition: all 0.3s;
+
+      &:hover {
+        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+  }
+
+  .table thead th {
+    border: none;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    padding: 10px 20px;
+  }
+
+  .table tbody tr {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+    transition: background 0.2s;
+
+    &:hover {
+      background: #fdfdfd;
+    }
+  }
+
+  .table td {
+    border: none;
+    padding: 20px;
+    vertical-align: middle;
+  }
+
+  .empty-card {
+    text-align: center;
+    padding: 5rem 1rem;
+    color: var(--text-muted);
+  }
+
+  .empty-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    background: #f1f5f9;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
