@@ -30,6 +30,8 @@ export class App implements OnInit {
     this.http.get<any>('assets/users.json').subscribe(
       (res) => {
         this.users = [...res.rows];
+        console.log('soy useerrrsss ', this.users);
+
         this.filteredUsers = [...this.users];
       },
       (err) => console.log(err),
