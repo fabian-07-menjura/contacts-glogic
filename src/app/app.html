@@ -67,11 +67,10 @@
             <div class="search-input d-flex align-items-center">
               <i class="bi bi-search ms-2 text-muted"></i>
               <input
-                type="text"
-                class="form-control form-control-lg search fs-6"
-                placeholder="Buscar por nombre, entidad o email..."
                 [(ngModel)]="searchTerm"
                 (input)="onSearch()"
+                class="form-control"
+                placeholder="Buscar..."
               />
             </div>
           </div>
